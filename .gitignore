@@ -1,0 +1,85 @@
+# ---------------------------
+# Visual Studio / .NET Ignore
+# ---------------------------
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+*.log
+*.tlog
+*.pdb
+
+# NuGet packages
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+!**/packages/repositories.config
+
+# Visual Studio Code
+.vscode/
+
+# ReSharper
+_ReSharper*/
+*.DotSettings.user
+
+# Rider
+.idea/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userprefs
+
+# ASP.NET Core secrets and configs
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.secret.json
+secrets.json
+
+# Database files
+*.mdf
+*.ldf
+
+# Logs
+*.log
+logs/
+Logs/
+
+# Publish output
+publish/
+*.Publish.xml
+*.pubxml
+*.publishproj
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.cache
+
+# Environment files
+.env
+.env.*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# JetBrains Rider
+.idea/
+
+# Optional: Visual Studio generated test results
+TestResults/
+*.trx
+coverage/
