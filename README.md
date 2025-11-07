@@ -57,10 +57,10 @@ USAL-Clinic-Management-System/
 
 ## 👨‍💻 Author
 
-**Ali Chkeir**  
-Full-Stack Developer | ASP.NET | SQL | JavaScript  
-🔗 [LinkedIn](https://www.linkedin.com/in/ali-chkeir/)  
-📧 ali.chkeir@example.com
+**Ali Choukeir**  
+Software Developer | C# ASP.NET Core | 42 Beirut Student | USAL CS Graduate
+🔗 [LinkedIn](https://www.linkedin.com/in/ali-choukeir/)  
+📧 chkeira664@gmail.com
 
 ---
 
