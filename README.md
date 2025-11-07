@@ -1,20 +1,71 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# 🏥 USAL Clinic Management System
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+A web-based **Clinic Management System** built with **ASP.NET Core MVC**, **Entity Framework Core**, and **SQL Server**.  
+This project streamlines clinic operations such as patient management, appointments, medical records, and prescriptions.  
+Developed as my **Final Year Project (FYP)**.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+---
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+## 🚀 Features
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+- Role-based access control (Admin, Doctor, Nurse, Patient)
+- Appointment scheduling and management
+- Patient and doctor registration
+- Electronic Medical Records (EMR)
+- Prescription management
+- Audit logging and reporting
+- Dashboard analytics
+- Secure authentication (ASP.NET Identity)
+- RESTful API support for mobile integration
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Technologies |
+|-----------|---------------|
+| **Frontend** | HTML, CSS, JavaScript, Bootstrap |
+| **Backend** | ASP.NET Core MVC, C# |
+| **Database** | SQL Server, Entity Framework Core |
+| **Security & Identity** | ASP.NET Identity, JWT |
+| **Architecture** | N-layer architecture with repository & service layers |
+| **Logging & Testing** | Serilog, xUnit tests |
+
+---
+
+## 🗃️ Project Architecture
+
+USAL-Clinic-Management-System/
+│
+├── UsalClinic.Core/ # Entities and domain models
+├── UsalClinic.Application/ # DTOs, services, and business logic
+├── UsalClinic.Infrastructure/ # Repositories, EF Core, data access
+├── UsalClinic.Web/ # MVC web app (controllers, views)
+└── UsalClinic.Api/ # RESTful API (JWT-secured endpoints)
+
+---
+
+## 🌱 Future Enhancements
+
+- Telemedicine (video consultations)
+- Billing & invoicing
+- Mobile app integration
+- Real-time notifications
+- Advanced analytics dashboard
+
+---
+
+## 👨‍💻 Author
+
+**Ali Chkeir**  
+Full-Stack Developer | ASP.NET | SQL | JavaScript  
+🔗 [LinkedIn](https://www.linkedin.com/in/ali-chkeir/)  
+📧 ali.chkeir@example.com
+
+---
+
+## 📄 License
+
+This project is open source under the **MIT License**.
+
+---
