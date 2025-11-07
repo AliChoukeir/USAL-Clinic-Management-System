@@ -34,7 +34,7 @@ Developed as my **Final Year Project (FYP)**.
 ---
 
 ## 🗃️ Project Architecture
-
+```
 USAL-Clinic-Management-System/
 │
 ├── UsalClinic.Core/ # Entities and domain models
@@ -42,7 +42,7 @@ USAL-Clinic-Management-System/
 ├── UsalClinic.Infrastructure/ # Repositories, EF Core, data access
 ├── UsalClinic.Web/ # MVC web app (controllers, views)
 └── UsalClinic.Api/ # RESTful API (JWT-secured endpoints)
-
+```
 ---
 
 ## 🌱 Future Enhancements
