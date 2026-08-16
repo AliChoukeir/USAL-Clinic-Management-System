@@ -50,8 +50,16 @@ builder.Services.AddCors(options =>
 });
 
 // JWT Authentication setup
-var jwtSecret = builder.Configuration["JwtSettings:Secret"] ?? "ThisIsASuperSecretKeyWithAtLeast32Chars!";
-var key = Encoding.ASCII.GetBytes(jwtSecret);
+// Fail fast: a missing secret must stop startup, never fall back to a known default.
+var jwtSecret = builder.Configuration["JwtSettings:Secret"];
+if (string.IsNullOrWhiteSpace(jwtSecret))
+    throw new InvalidOperationException(
+        "JwtSettings:Secret is not configured. Set it via user-secrets (development) " +
+        "or an environment variable / Key Vault (production).");
+if (Encoding.UTF8.GetByteCount(jwtSecret) < 32)
+    throw new InvalidOperationException("JwtSettings:Secret must be at least 32 bytes for HMAC-SHA256.");
+
+var key = Encoding.UTF8.GetBytes(jwtSecret);
 
 builder.Services.AddAuthentication(options =>
 {
