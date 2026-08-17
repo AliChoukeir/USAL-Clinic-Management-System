@@ -221,6 +221,12 @@ async Task SeedAdminUserAsync(IServiceProvider serviceProvider)
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
+
+    // Create the database and apply any pending migrations on startup, so a fresh
+    // clone runs without needing `dotnet ef database update` first.
+    var db = services.GetRequiredService<ApplicationDbContext>();
+    await db.Database.MigrateAsync();
+
     await SeedRolesAsync(services);
     await SeedAdminUserAsync(services);
 }
